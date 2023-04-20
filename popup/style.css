@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+    /* COLORS */
+    --clr-blue: #191A33;
+    --clr-dark-blue: #14152d;
+    --clr-dark-green: #128971;
+    --clr-light-green: #19B99A;
+    --clr-white: #ffeeff;
+
+    /* FONTS */
+    --fnt-poppins: 'Poppins', sans-serif;
+    --fnt-mont: 'Montserrat', sans-serif;
+
+    /* WEIGHT */
+    --wgt-black: 700;
+    --wgt-bold: 600;
+    --wgt-semi: 500;
+    --wgt-medium: 400;
+
+}
+
+body {
+    height: 25rem;
+    aspect-ratio: 1/1.6;
+    margin: 0;
+    overflow: hidden;
+    background: var(--clr-blue);
+}
+
+* {
+    transition: all .4s ease;
+}
+
+/* HEADER */
+
+header {
+    height: 15%;
+    width: 100%;
+    background: var(--clr-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-logo {
+    height: 90%;
+}
+
+#close {
+    font-size: 1.1rem;
+}
+
+.link {
+    color: var(--clr-white);
+    font-weight: var(--wgt-semi);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+
+.container {
+    height: 78%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* INPUTS */
+
+.inputs-container {
+    background: var(--clr-dark-blue);
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 90%;
+    height: 25%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--clr-white);
+    font-size: 1.1rem;
+    color: var(--clr-white);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    font-family: monospace;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* COLOR */
+
+.color-container {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: var(--clr-blue);
+    border-radius: 100%;
+    border: 2px solid var(--clr-white);
+    position: relative;
+    bottom: 15%;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+    background: var(--clr-dark-blue);
+    text-align: center;
+    color: var(--clr-white);
+    font-size: 1rem;
+}
