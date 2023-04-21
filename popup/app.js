@@ -39,24 +39,15 @@ document.querySelector('#close').addEventListener('click', ()=>{
     window.close()
 })
 
-// CHECK CORRECT INPUT
-
-let validHexCode = (code) => {
-    return /^#([0-6A-F]{3}){1,2}$/i.test(code)
-}
-let validRgbCode = (code) => {
-    return /^rgb[(]([0-9]{1,3}, [0-9]{1,3}, [0-9]{1,3})[)]{1,2}$/i.test(code)
-}
-
 // SET COLOR
 
 let newHexInput = () => {
     
     const color = hexElement.value
 
-    if(validHexCode(color)){
+    try{
         document.querySelector('#color').style.background = color
-    }
+    } catch {}
 
 }
 
@@ -64,9 +55,9 @@ let newRgbInput = () => {
     
     const color = rgbElement.value
 
-    if(validRgbCode(color)){
+    try{
         document.querySelector('#color').style.background = toHex(color)
-    }
+    } catch {}
 
 }
 
