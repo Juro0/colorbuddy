@@ -16,7 +16,7 @@ colorbuddy is an extension that permit the user to visualize the colors using he
 
 - download the latest release on [this link](https://github.com/Juro0/colorbuddy/releases/latest) clicking on the .crx file
 
-- go to the extension page on your browser ([chrome](chrome://extensions/))
+- go to the extension page on your browser | `chrome://extensions/` for chrome
 
 - if colorbuddy is disabled, click on the 'install' button or enable the toggle slider
 
@@ -32,7 +32,7 @@ colorbuddy is an extension that permit the user to visualize the colors using he
 ```
 git clone https://github.com/Juro0/colorbuddy.git
 ```
-- open the extension page on your browser ([chrome](chrome://extensions/))
+- open the extension page on your browser  | `chrome://extensions/` for chrome
 
 - in the left-top corner, check that the developer mode is enable
 
