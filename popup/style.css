@@ -1,0 +1,122 @@
+
+:root {
+
+    --clr-blue: #050517;
+    --clr-silver: #c8c8c8;
+    --clr-orange: #cf5c36;
+
+    --font: Helvetica, sans-serif;
+    --mono: monospace;
+
+}
+
+/* GENERAL */
+
+body {
+    height: 400px;
+    width: 250px;
+    padding-top: 30px;
+    background: var(--clr-blue);
+    outline: 2px solid #f00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    cursor: default;
+}
+
+*::selection {
+    background: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.hide {display: none !important}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* BODY */
+
+.codes-container {
+    width: 220px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input.code {
+    height: 30px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--clr-orange);
+    padding-bottom: 3px;
+    font-family: var(--mono);
+    font-size: 16px;
+    color: var(--clr-silver);
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: text;
+}
+
+input.code::selection {
+    background: var(--clr-silver);
+    color: var(--clr-blue);
+}
+
+i.code-convert-icon {
+    color: var(--clr-orange);
+    font-size: 28px;
+    opacity: .7;
+    transition: all .3s ease;
+}
+
+i.code-convert-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#visualize {
+    height: 90px;
+    aspect-ratio: 1/1;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background: var(--color);
+    transition: .2s all ease;
+}
+
+footer {
+    height: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+footer > p {
+    font-family: var(--font);
+    font-size: 15px;
+    color: var(--clr-silver);
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+footer a {
+    color: var(--clr-orange);
+    text-underline-offset: 2px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "colorbuddy",
+  "version": "2.0.0",
+  "author": "Juri Gemignani",
+  "description": "visualize and convert RGB and HEX colors",
+  "icons": {
+    "16": "images/logo-16x.png",
+    "32": "images/logo-32x.png",
+    "64": "images/logo-64x.png",
+    "128": "images/logo-128x.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
